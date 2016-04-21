@@ -35,13 +35,13 @@ def prep_ingredients(name, description, feature, rating)
   if(rating.to_i == 1)
     rating = ["You make a really good friend."].sample
   elsif(rating.to_i == 2)
-    rating = ["Text me."].sample
+    rating = ["Text me.", "Hit me up cutie."].sample
   elsif(rating.to_i == 3)
-    rating = ["Let's grab lunch."].sample
+    rating = ["Let's grab lunch.","Lets hang out some time."].sample
   elsif(rating.to_i == 4)
-    rating = ["Let's go on a date?"].sample
+    rating = ["Let's go on a date?", "Can I take you out?"].sample
   elsif(rating.to_i == 5)
-    rating = ["I worship the ground you walk on."].sample
+    rating = ["I worship the ground you walk on.", "I'm not taking NO for an answer."].sample
   else
     rating = ["My love for you can't be quantified in numbers."].sample
   end
