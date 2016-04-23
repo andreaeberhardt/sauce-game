@@ -3,7 +3,7 @@ def prep_ingredients(name, description, feature, rating)
   if (description.to_i == 1) #heart-eyes
     description = ["you were love at first sight", "I'm like a deer caught in the headlights of your beauty", "your eyes light up my day"].sample
   elsif (description.to_i == 2) #winky face with tongue
-    description = ["you drive me crazy"].sample
+    description = ["you drive me crazy", "you make me laugh and smile like no one else"].sample
   elsif (description.to_i == 3) #fire
     description = ["you are fire", "you are lit", "you are dynamite"].sample
   elsif (description.to_i == 4) #heart
@@ -14,15 +14,15 @@ def prep_ingredients(name, description, feature, rating)
   
   #the following if statement will process the second question: best feature
   if(feature.to_i == 1)
-    feature = ["I love your smile"].sample
+    feature = ["I love your smile", "Did anyone ever tell you that you have really good teeth?"].sample
   elsif(feature.to_i == 2)
     feature = ["I love your lips", "When our lips touch, I can taste the next 60 years of my life", "When our lips touch, I can taste forever"].sample
   elsif(feature.to_i == 3)
-    feature = ["I love your eyes"].sample
+    feature = ["I love your eyes", "Your eyes are like the stars in the sky"].sample
   elsif(feature.to_i == 4)
     feature = ["I love your weave", "I love your hair"].sample
   elsif(feature.to_i == 5)
-    feature = ["I love how smart you are"].sample
+    feature = ["I love how smart you are", "Conversations with you make me feel like I've known you for a long time"].sample
   elsif(feature.to_i == 6)
     feature = ["I love your muscles"].sample
   elsif(feature.to_i == 7) #money emoji
@@ -37,11 +37,11 @@ def prep_ingredients(name, description, feature, rating)
   elsif(rating.to_i == 2)
     rating = ["Text me.", "Hit me up cutie."].sample
   elsif(rating.to_i == 3)
-    rating = ["Let's grab lunch.","Lets hang out some time."].sample
+    rating = ["Let's grab lunch.","Lets hang out some time.", "I like you."].sample
   elsif(rating.to_i == 4)
     rating = ["Let's go on a date?", "Can I take you out?"].sample
   elsif(rating.to_i == 5)
-    rating = ["I worship the ground you walk on.", "I'm not taking NO for an answer."].sample
+    rating = ["I worship the ground you walk on.", "I love you."].sample
   else
     rating = ["My love for you can't be quantified in numbers."].sample
   end
