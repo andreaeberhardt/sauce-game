@@ -20,7 +20,7 @@ def prep_ingredients(name, description, feature, rating)
   elsif(feature.to_i == 3)
     feature = ["I love your eyes", "Your eyes are like the stars in the sky"].sample
   elsif(feature.to_i == 4)
-    feature = ["I love your weave", "I love your hair"].sample
+    feature = ["I love your hair"].sample
   elsif(feature.to_i == 5)
     feature = ["I love how smart you are", "Conversations with you make me feel like I've known you for a long time"].sample
   elsif(feature.to_i == 6)
