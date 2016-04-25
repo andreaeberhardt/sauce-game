@@ -11,12 +11,12 @@ def prep_ingredients(name, description, feature, rating)
   else #if they don't choose anything
     description = ["you are so unique there is no emoji to describe you"].sample
   end
-  
+
   #the following if statement will process the second question: best feature
   if(feature.to_i == 1)
     feature = ["I love your smile", "Did anyone ever tell you that you have really good teeth?"].sample
   elsif(feature.to_i == 2)
-    feature = ["I love your lips", "When our lips touch, I can taste the next 60 years of my life", "When our lips touch, I can taste forever"].sample
+    feature = ["I love your lips", "When our lips touch, I can taste forever"].sample
   elsif(feature.to_i == 3)
     feature = ["I love your eyes", "Your eyes are like the stars in the sky"].sample
   elsif(feature.to_i == 4)
@@ -24,13 +24,13 @@ def prep_ingredients(name, description, feature, rating)
   elsif(feature.to_i == 5)
     feature = ["I love how smart you are", "Conversations with you make me feel like I've known you for a long time"].sample
   elsif(feature.to_i == 6)
-    feature = ["I love your muscles", "I love how strog you are", "I love how you flex for me"].sample
+    feature = ["I love your muscles", "I love how strog you are"].sample
   elsif(feature.to_i == 7) #money emoji
     feature = ["I love how you take care of me", "I love how you look out for me"].sample
   else
     feature = ["I love everything"].sample
   end
-    
+
   #the following if statement will process the third question: rating
   if(rating.to_i == 1)
     rating = ["You make a really good friend."].sample
@@ -45,7 +45,7 @@ def prep_ingredients(name, description, feature, rating)
   else
     rating = ["My love for you can't be quantified in numbers."].sample
   end
-  
+
   sauce_it(name, description, feature, rating)
 end
 
