@@ -24,7 +24,7 @@ def prep_ingredients(name, description, feature, rating)
   elsif(feature.to_i == 5)
     feature = ["I love how smart you are", "Conversations with you make me feel like I've known you for a long time"].sample
   elsif(feature.to_i == 6)
-    feature = ["I love your muscles", "I love how strog you are"].sample
+    feature = ["I love your muscles", "I love how strong you are"].sample
   elsif(feature.to_i == 7) #money emoji
     feature = ["I love how you take care of me", "I love how you look out for me"].sample
   else
