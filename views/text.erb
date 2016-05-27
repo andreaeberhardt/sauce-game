@@ -8,10 +8,20 @@
     <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+    <script>
+      $( document ).ready(function() {
+      $('#textarea1').val("<%=@messagefortext%>")
+      });
+    </script>
+    
     <title>Sauce Game</title>
   </head>
 
-  
+
   <body>
 
 
@@ -64,16 +74,5 @@
 
       </form>
 
-
-
-
   </body>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-
-<script>
-  $( document ).ready(function() {
-  $('#textarea1').val("<%=@messagefortext%>")
-  });
-</script>
 </html
